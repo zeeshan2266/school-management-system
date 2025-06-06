@@ -1,0 +1,87 @@
+.admit-card-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.admit-card-form input {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.admit-card-display {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.admit-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.board-logo {
+    width: 80px;
+}
+
+.student-photo {
+    width: 100px;
+}
+
+.admit-card-details {
+    text-align: left;
+    padding: 20px;
+}
+
+.admit-card-details p {
+    margin: 5px 0;
+}
+
+.admit-card-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.admit-card-table th, .admit-card-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.admit-card-form-paper,
+.admit-card-display-paper {
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.admit-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.board-logo,
+.student-photo {
+    width: 100px;
+    height: 100px;
+}
+
+.admit-card-details {
+    margin-bottom: 1.5rem;
+}
+
+.admit-card-table {
+    margin-top: 1.5rem;
+}
+
+.admit-card-form {
+    margin-top: 1rem;
+}

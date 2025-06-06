@@ -1,0 +1,11 @@
+@media print {
+    #printableArea {
+        width: 90%;
+        margin: auto;
+        border: none;
+        padding: 20px;
+    }
+    body {
+        -webkit-print-color-adjust: exact; /* Ensures colors print properly */
+    }
+}

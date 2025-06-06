@@ -1,0 +1,329 @@
+/* CalendarIntegration.css */
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.calendar-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.filters-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.filter-badge {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.calendar-connection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border-radius: 6px;
+    border: 1px solid #b8daff;
+}
+
+.calendar-connection h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #0056b3;
+}
+
+.calendar-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.select-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.calendar-wrapper {
+    height: 520px; /* Fixed height for calendar */
+    margin-bottom: 20px;
+}
+
+.calendar-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.calendar-toolbar-nav,
+.calendar-toolbar-views {
+    display: flex;
+    gap: 8px;
+}
+
+.calendar-toolbar-label h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.calendar-toolbar button {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 4px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.calendar-toolbar button:hover {
+    background-color: #e9ecef;
+}
+
+.calendar-toolbar button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.event-details {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-details h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    color: #212529;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 8px;
+}
+
+.event-time {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.event-time p {
+    margin: 4px 0;
+}
+
+.event-type {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    background-color: #e2e3e5;
+}
+
+.room-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.room-info p {
+    margin: 2px 0;
+}
+
+.event-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.join-button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.import-button {
+    padding: 8px 16px;
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.recurring-button {
+    padding: 8px 16px;
+    background-color: #fd7e14;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.connect-button {
+    padding: 8px 16px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    align-self: flex-start;
+}
+
+.disconnect-button {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.refresh-button {
+    padding: 6px 12px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.message-box {
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+.calendar-legend {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.calendar-legend h4 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.legend-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.color-box {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
+.active-color {
+    background-color: #28a745;
+}
+
+.scheduled-color {
+    background-color: #007bff;
+}
+
+.calendar-color {
+    background-color: #6f42c1;
+}
+
+/* React Big Calendar Overrides */
+.rbc-event {
+    padding: 4px !important;
+}
+
+.rbc-event-content {
+    font-size: 0.85rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .calendar-toolbar {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .event-time {
+        flex-direction: column;
+        gap: 0;
+    }
+}

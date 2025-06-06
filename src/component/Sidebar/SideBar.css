@@ -1,0 +1,42 @@
+/* SideBar.css */
+
+/* Ensure sidebar takes full height of the viewport */
+.sidebar {
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevent horizontal overflow */
+}
+
+/* Make routes scrollable */
+.sidebar .routes {
+    height: calc(100% - 64px); /* Adjust height based on other elements like AppBar */
+    overflow-y: scroll; /* Make routes scrollable */
+}
+
+/* Hide scrollbar for Webkit-based browsers (Chrome, Safari) */
+.sidebar .routes::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Optional: just to be sure background is transparent */
+}
+
+/* Hide scrollbar for Firefox */
+.sidebar .routes {
+    scrollbar-width: none; /* Firefox */
+}
+
+
+.icon {
+    margin-right: 10px;
+}
+
+
+.submenu-link.active {
+    background-color: #f0f0f0;
+}
+
+.submenu-link:hover {
+    background-color: #e0e0e0;
+}
+
+.submenu-icon {
+    margin-right: 10px;
+}

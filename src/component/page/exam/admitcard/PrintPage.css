@@ -1,0 +1,12 @@
+/* index.css or App.css */
+@media print {
+    /* Hide everything that's not meant for printing */
+    .no-print {
+        display: none !important;
+    }
+
+    /* Ensure the print-section is visible during printing */
+    .print-section {
+        display: block !important;
+    }
+}

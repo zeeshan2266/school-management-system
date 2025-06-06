@@ -1,0 +1,108 @@
+/* SubjectManagement.css */
+.tab-content-enter {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.tab-content-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.tab-content-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.tab-content-exit-active {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 300ms, transform 300ms;
+}
+
+
+/* Container for the entire assignments section */
+.assignments-container {
+    margin-top: 20px;
+}
+
+/* Class container styles */
+.class-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Class title styles */
+.class-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #3f51b5; /* Primary color for emphasis */
+}
+
+/* Sections container styles */
+.sections-container {
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+/* Section container styles */
+.section-container {
+    margin-bottom: 10px;
+}
+
+/* Section title styles */
+.section-title {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333; /* Darker shade for section titles */
+}
+
+/* List of subjects styles */
+.subjects-list {
+    padding-left: 20px;
+}
+
+/* Individual subject item styles */
+.subject-item {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border-left: 4px solid #3f51b5; /* Highlight subjects with a colored border */
+    background-color: #fff;
+    border-radius: 4px;
+    color: #555;
+}
+
+/* Hover effect on subject items */
+.subject-item:hover {
+    background-color: #e3f2fd; /* Light blue background on hover */
+}
+
+.subject-item-enter {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.subject-item-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.subject-item-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.subject-item-exit-active {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.subject-list-item:hover {
+    background-color: #e0e0e0; /* Lighter background on hover */
+}
